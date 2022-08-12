@@ -6568,9 +6568,10 @@ var _context, _ref, _ref$undefined;
 
 
 
-console.log(includes_default()(_context = [1, 2, 3]).call(_context, 3));
-console.log(from_entries_default()([[1, 2], [3, 4]]));
-console.log((_ref = null) === null || _ref === void 0 ? void 0 : (_ref$undefined = _ref.undefined) === null || _ref$undefined === void 0 ? void 0 : _ref$undefined.toString());
+console.warn("in index.js - expecting no errors as it is transformed");
+console.log("[1, 2, 3].includes(3)", includes_default()(_context = [1, 2, 3]).call(_context, 3));
+console.log("Object.fromEntries([[1, 2], [3, 4]])", from_entries_default()([[1, 2], [3, 4]]));
+console.log("null?.undefined?.toString()", (_ref = null) === null || _ref === void 0 ? void 0 : (_ref$undefined = _ref.undefined) === null || _ref$undefined === void 0 ? void 0 : _ref$undefined.toString());
 
 function main() {
   return _main.apply(this, arguments);

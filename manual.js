@@ -1,3 +1,4 @@
+console.warn("In manual.js - expecting errors below")
 
 try {
   console.log([1, 2, 3].includes(3))
